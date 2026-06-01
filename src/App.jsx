@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-import { Github, ExternalLink, ArrowUpRight, Cloud, Boxes, GitBranch, Terminal, ShieldCheck, Database } from 'lucide-react'
+import { Github, Mail, ExternalLink, ArrowUpRight, Cloud, Boxes, GitBranch, Terminal, ShieldCheck, Database } from 'lucide-react'
 import ParticleBackground from './components/ParticleBackground.jsx'
 import { content } from './content.js'
 
@@ -135,6 +135,10 @@ export default function App() {
       <Section id="contact" label={t.contact.label} title={t.contact.title}>
         <p className="text-slate-400 max-w-xl mb-7">{t.contact.lead}</p>
         <div className="flex flex-wrap gap-4 font-mono text-sm">
+          <a href="mailto:lotrontoriccardo@gmail.com"
+            className="inline-flex items-center gap-2 glass glow-border px-5 py-3 rounded-xl transition">
+            <Mail size={16} className="text-accent" /> lotrontoriccardo@gmail.com
+          </a>
           <a href="https://github.com/nexusites" target="_blank" rel="noopener"
             className="inline-flex items-center gap-2 glass glow-border px-5 py-3 rounded-xl transition">
             <Github size={16} className="text-accent" /> github.com/nexusites

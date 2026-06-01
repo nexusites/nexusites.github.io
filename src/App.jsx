@@ -23,7 +23,7 @@ export default function App() {
       <nav className="fixed top-0 inset-x-0 z-50 glass">
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
           <span className="font-mono text-sm text-accent">
-            riccardo<span className="text-slate-500">@</span>cloud<span className="text-slate-500">:~$</span>
+            Riccardo Lotronto
           </span>
           <div className="flex items-center gap-6">
             <div className="hidden md:flex gap-6 font-mono text-xs text-slate-400">

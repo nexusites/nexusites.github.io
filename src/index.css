@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body {
+  background: #05070d;
+  color: #e6edf3;
+  font-family: 'Space Grotesk', sans-serif;
+  overflow-x: hidden;
+}
+::selection { background: #5eead4; color: #05070d; }
+
+.gradient-text {
+  background: linear-gradient(110deg, #5eead4, #a78bfa, #fb923c);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+.glass {
+  background: rgba(12, 17, 32, 0.55);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(94, 234, 212, 0.12);
+}
+.glow-border:hover {
+  border-color: rgba(94, 234, 212, 0.55);
+  box-shadow: 0 0 40px -12px rgba(94, 234, 212, 0.35);
+}

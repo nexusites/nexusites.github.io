@@ -1,0 +1,158 @@
+export const content = {
+  it: {
+    nav: { about: 'Chi sono', skills: 'Competenze', projects: 'Progetti', path: 'Percorso', contact: 'Contatti' },
+    hero: {
+      tag: '// Cloud & DevOps Engineer',
+      title1: 'Costruisco infrastruttura',
+      title2: 'serverless',
+      title3: 'su AWS',
+      lead: 'Progetto e deployo applicazioni cloud-native con architetture serverless, Infrastructure as Code e pipeline CI/CD automatizzate. Tutti i progetti qui sotto sono reali, deployati e funzionanti.',
+      cta1: 'Vedi i progetti',
+      cta2: 'Scrivimi',
+    },
+    about: {
+      label: '// Chi sono',
+      title: 'Un approccio pratico al cloud',
+      p1: "Sono Riccardo Lotronto, aspirante Cloud / DevOps Engineer. Mi appassiona l'automazione dell'infrastruttura e la costruzione di sistemi affidabili e scalabili sul cloud.",
+      p2: 'Sto studiando per la certificazione AWS e imparo costruendo: ogni concetto lo trasformo in un progetto reale, deployato e documentato. Credo che il modo migliore per dimostrare competenza sia mostrare cose che funzionano davvero, non solo teoria.',
+      p3: 'Il mio metodo: costruisci, rompi, aggiusta, documenta. Preferisco la chiarezza alla complessità.',
+    },
+    skills: {
+      label: '// Competenze & Toolchain',
+      title: 'Le tecnologie che uso',
+      groups: [
+        { name: 'Cloud & Compute', items: ['AWS', 'Lambda', 'EC2', 'API Gateway'] },
+        { name: 'Storage & Data', items: ['S3', 'DynamoDB', 'CloudWatch'] },
+        { name: 'IaC & Deploy', items: ['CloudFormation', 'AWS SAM', 'Infrastructure as Code'] },
+        { name: 'CI/CD', items: ['CodePipeline', 'CodeBuild', 'GitHub Actions'] },
+        { name: 'Linguaggi & Tools', items: ['Python', 'pytest', 'Git', 'Bash'] },
+        { name: 'Pratiche', items: ['Serverless', 'Event-Driven', 'Least-Privilege IAM'] },
+      ],
+    },
+    projects: {
+      label: '// Progetti',
+      title: 'Cosa ho costruito',
+      live: 'Live demo',
+      items: [
+        {
+          n: '01', name: 'Serverless URL Shortener',
+          desc: 'API REST serverless per accorciare URL con tracciamento dei click e scadenza automatica. Include una pagina web di presentazione e gira interamente nel Free Tier AWS.',
+          stack: ['API Gateway', 'Lambda', 'DynamoDB', 'SAM', 'CI/CD'],
+          github: 'https://github.com/nexusites/aws-url-shortener',
+          demo: 'https://73si4d4qbc.execute-api.eu-west-1.amazonaws.com/Prod',
+        },
+        {
+          n: '02', name: 'Event-Driven File Pipeline',
+          desc: "Pipeline serverless event-driven: l'upload di un file su S3 attiva una Lambda che estrae i metadati e li archivia in DynamoDB. Costo zero a riposo.",
+          stack: ['S3', 'Lambda', 'DynamoDB', 'IAM'],
+          github: 'https://github.com/nexusites/aws-file-pipeline',
+        },
+        {
+          n: '03', name: 'API Multi-Ambiente con Feature Flags',
+          desc: 'Stessa codebase deployata su dev, staging e prod da un solo template CloudFormation, con feature flag diversi per ambiente. Infrastructure as Code allo stato puro.',
+          stack: ['CloudFormation', 'API Gateway', 'Lambda', 'SAM'],
+          github: 'https://github.com/nexusites/aws-feature-flags',
+        },
+        {
+          n: '04', name: 'Pipeline CI/CD su AWS',
+          desc: 'Pipeline di continuous integration e delivery interamente su AWS con CodePipeline e CodeBuild, sorgente GitHub. Build, test e packaging automatici a ogni push.',
+          stack: ['CodePipeline', 'CodeBuild', 'S3', 'IAM'],
+          github: 'https://github.com/nexusites/aws-cicd-pipeline',
+        },
+      ],
+    },
+    path: {
+      label: '// Percorso',
+      title: 'Dove sono e dove vado',
+      items: [
+        { time: 'In corso', title: 'Certificazione AWS', desc: 'Studio per la certificazione AWS, con focus su servizi serverless e architetture cloud.' },
+        { time: '2026', title: 'Portfolio di 4 progetti AWS', desc: 'Costruiti, deployati e documentati: serverless, event-driven, IaC multi-ambiente e CI/CD.' },
+        { time: 'Obiettivo', title: 'Cloud / DevOps Engineer', desc: 'Ruolo in cui automatizzare infrastruttura e costruire sistemi affidabili e scalabili.' },
+      ],
+    },
+    contact: {
+      label: '// Contatti',
+      title: 'Parliamone',
+      lead: 'Sono aperto a opportunità come Cloud / DevOps Engineer. Trovi tutto il mio lavoro su GitHub.',
+    },
+    footer: 'Costruito con React, Vite e Tailwind · Ospitato su GitHub Pages',
+  },
+  en: {
+    nav: { about: 'About', skills: 'Skills', projects: 'Projects', path: 'Journey', contact: 'Contact' },
+    hero: {
+      tag: '// Cloud & DevOps Engineer',
+      title1: 'I build',
+      title2: 'serverless',
+      title3: 'infrastructure on AWS',
+      lead: 'I design and deploy cloud-native applications using serverless architectures, Infrastructure as Code and automated CI/CD pipelines. Every project below is real, deployed and working.',
+      cta1: 'View projects',
+      cta2: 'Get in touch',
+    },
+    about: {
+      label: '// About',
+      title: 'A hands-on approach to the cloud',
+      p1: "I'm Riccardo Lotronto, an aspiring Cloud / DevOps Engineer. I'm passionate about infrastructure automation and building reliable, scalable systems in the cloud.",
+      p2: "I'm studying for the AWS certification and I learn by building: I turn every concept into a real, deployed and documented project. I believe the best way to prove skill is to show things that actually work, not just theory.",
+      p3: 'My method: build, break, fix, document. I prefer clarity over complexity.',
+    },
+    skills: {
+      label: '// Skills & Toolchain',
+      title: 'The technologies I use',
+      groups: [
+        { name: 'Cloud & Compute', items: ['AWS', 'Lambda', 'EC2', 'API Gateway'] },
+        { name: 'Storage & Data', items: ['S3', 'DynamoDB', 'CloudWatch'] },
+        { name: 'IaC & Deploy', items: ['CloudFormation', 'AWS SAM', 'Infrastructure as Code'] },
+        { name: 'CI/CD', items: ['CodePipeline', 'CodeBuild', 'GitHub Actions'] },
+        { name: 'Languages & Tools', items: ['Python', 'pytest', 'Git', 'Bash'] },
+        { name: 'Practices', items: ['Serverless', 'Event-Driven', 'Least-Privilege IAM'] },
+      ],
+    },
+    projects: {
+      label: '// Projects',
+      title: 'What I have built',
+      live: 'Live demo',
+      items: [
+        {
+          n: '01', name: 'Serverless URL Shortener',
+          desc: 'Serverless REST API for shortening URLs with click tracking and automatic expiry. Includes a landing page and runs entirely within the AWS Free Tier.',
+          stack: ['API Gateway', 'Lambda', 'DynamoDB', 'SAM', 'CI/CD'],
+          github: 'https://github.com/nexusites/aws-url-shortener',
+          demo: 'https://73si4d4qbc.execute-api.eu-west-1.amazonaws.com/Prod',
+        },
+        {
+          n: '02', name: 'Event-Driven File Pipeline',
+          desc: 'Event-driven serverless pipeline: uploading a file to S3 triggers a Lambda that extracts its metadata and stores it in DynamoDB. Zero cost at rest.',
+          stack: ['S3', 'Lambda', 'DynamoDB', 'IAM'],
+          github: 'https://github.com/nexusites/aws-file-pipeline',
+        },
+        {
+          n: '03', name: 'Multi-Environment API with Feature Flags',
+          desc: 'One codebase deployed to dev, staging and prod from a single CloudFormation template, with different feature flags per environment. Pure Infrastructure as Code.',
+          stack: ['CloudFormation', 'API Gateway', 'Lambda', 'SAM'],
+          github: 'https://github.com/nexusites/aws-feature-flags',
+        },
+        {
+          n: '04', name: 'CI/CD Pipeline on AWS',
+          desc: 'A full continuous integration and delivery pipeline built natively on AWS with CodePipeline and CodeBuild, sourced from GitHub. Automated build, test and packaging on every push.',
+          stack: ['CodePipeline', 'CodeBuild', 'S3', 'IAM'],
+          github: 'https://github.com/nexusites/aws-cicd-pipeline',
+        },
+      ],
+    },
+    path: {
+      label: '// Journey',
+      title: 'Where I am and where I am going',
+      items: [
+        { time: 'Ongoing', title: 'AWS Certification', desc: 'Studying for the AWS certification, focused on serverless services and cloud architectures.' },
+        { time: '2026', title: 'Portfolio of 4 AWS projects', desc: 'Built, deployed and documented: serverless, event-driven, multi-env IaC and CI/CD.' },
+        { time: 'Goal', title: 'Cloud / DevOps Engineer', desc: 'A role where I can automate infrastructure and build reliable, scalable systems.' },
+      ],
+    },
+    contact: {
+      label: '// Contact',
+      title: "Let's talk",
+      lead: 'I am open to opportunities as a Cloud / DevOps Engineer. You can find all my work on GitHub.',
+    },
+    footer: 'Built with React, Vite and Tailwind · Hosted on GitHub Pages',
+  },
+}
